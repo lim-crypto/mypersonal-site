@@ -1,0 +1,325 @@
+ *{
+     margin: 0;
+     padding: 0;
+     font-family: 'poppins', sans-serif;
+ }
+ @media(prefers-reduced-motion:no-preference){
+   html{
+     scroll-behavior: smooth;
+   }
+ }
+ .header{
+     z-index: 2;
+     /* background-color: white; */
+     display: flex;
+     width: 100%;
+     position: fixed;
+     top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .5s;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+.navbar{
+    display: flex;
+    margin: auto 0;
+    height: 90px;
+}
+.menu{
+    margin: auto 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+ 
+.bar {
+width: 100%;
+height: 3px;
+background-color:navy;
+transition: all .8s;
+border-radius: 100px;
+}
+.change .a {
+    transform: rotateZ(-405deg) translate(-4px, 5px);
+}
+
+.change .b {
+    opacity: 0;
+    transform: rotateZ(360deg) translate(-8px, -6px);
+}
+
+.change .c {
+    transform: rotateZ(-315deg) translate(-4px, -5px);
+}
+.logo{
+    margin: auto 0;
+    color:navy;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.navbar ul{
+    margin: auto 0;
+    margin-left:  auto  ;
+    list-style: none; 
+    display:flex;
+}
+.navbar ul li{
+    padding: 20px;
+}
+.ullia, .logo a{ 
+    text-decoration: none;
+    color:navy;
+    font-weight: bold;
+}
+  .active, .navbar ul li a:hover{
+    /* color:navy;  */
+    color: white; 
+    text-shadow: 2px 1px 2px navy, 0 0 25px navy, 0 0 2px navy;
+}
+  
+  .parallax {
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img1{
+    background-image: url('https://miro.medium.com/max/10944/1*8yz3hkO3ynHV2qYGARynJg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px; 
+    background-size: cover; 
+  }
+  .myname{
+      /* position: absolute;
+      top: 40%;  */
+    z-index: 1;
+    font-size: 30px;
+  }
+  .myname h1{
+      font-size: 80px;
+      font-weight: 900;
+      color:navy;
+  }
+  .button{
+      width: 200px;
+      font-size: 20px;
+      padding: 10px;
+      margin-top:40px;
+        text-decoration: none;
+      border: 1px solid navy;
+      border-radius: 100px;
+  }
+  .btn1{
+    background-color: navy;
+    color: white;
+  }
+  .btn2{
+    background-color: rgba(255, 255, 255, 0.1) ;
+    color: navy;
+  }
+  .btn1:hover{
+      color:navy;
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+  .btn2:hover{
+    color:white;
+    background-color: navy;
+    
+}
+  .title{ 
+      margin: 30px;
+      padding:30px;
+      padding-top: 60px;
+      padding-bottom: 90px;
+  }
+  .title h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color:navy;
+
+}
+  .content{
+      display: flex;
+  }
+  .content div{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+.content div p{
+    padding: 10px; 
+  text-indent: 30px;
+    /* letter-spacing: 1px; */
+    line-height:1.8;  
+
+}
+.content div img{
+    width: 75%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:20%;
+
+} 
+.img2{
+    background-image: url('https://developer.okta.com/assets-jekyll/blog/featured/okta-php-headphones-c6f0e7e833178e4b70e79a88d9f92b1ec41b2ec6b8c9792f014cdb6c7db56f86.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }    
+ .title .whiteh1{
+   color: white;
+   text-shadow: 0px 0px 2px navy, 0 0 25px navy, 0 0 2px navy;
+   padding-top: 60px;
+
+ }
+.skills{
+  background-color: navy;
+  background-color: rgba(0, 0, 128, 0.7);
+  color: white;
+  line-height: 1.8; 
+}
+.skills:hover{
+  background-color:white; 
+  color: navy; 
+  box-shadow: 0 0 20px navy,0 0 35px navy,0 0 20px navy;
+}
+.skills h2{
+  text-align: center;
+  padding: 20px;
+
+}
+.project{
+  color: navy; 
+  line-height: 1.8; 
+  box-shadow: 0 0 10px navy;
+
+}
+.project:hover{ 
+  box-shadow: 0 0 15px navy,0 0 20px navy;
+
+}
+#contact{
+  background-color: navy;
+}
+.h2{
+  color:white;
+  text-align: center;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+} 
+.fa-instagram ,
+.fa-facebook  ,
+.fa-twitter ,
+.fa-linkedin{
+    color:navy;
+}
+.fa-instagram:hover ,
+.fa-facebook:hover  ,
+.fa-twitter:hover ,
+.fa-linkedin:hover{
+  text-shadow: 0px 0px 2px navy, 0 0 25px navy, 0 0 2px navy;
+  color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+   .menu{
+       display: flex;
+   }
+   .logo{  
+    font-size: 25px;
+} 
+   .navbar{
+       height: 40px;
+   }
+   .navbar ul{ 
+       padding: 30px;
+       display:block;
+       position: fixed;
+       top: 40px;
+       left: -300px;
+       height: 100%;
+       width: 150px;
+       background-color: white;
+       justify-content: center;
+       align-items: center;
+       transition: left .5s cubic-bezier(1, 1, 0, 0);
+   }  
+   .change ul{
+       left: 0;
+   } 
+   .myname{
+    top: 35%; 
+  font-size: 20px;
+}
+.myname h1{
+    font-size: 55px;
+}
+.button{
+    width: 150px;
+    font-size: 15px;
+    margin-top:30px;
+}
+/* 
+   .title{
+    margin: 0px;
+}
+.content{
+    display: block;
+    margin:0px;
+}
+.content div{ 
+  margin-bottom: 20px;
+  margin-right: 0px;
+
+}
+
+.content div p{  
+  line-height:1.8;  
+
+}
+.content div img{
+  width: 100%;
+
+} */
+.title{ 
+  margin:  0px; 
+} 
+.content{
+  display: block;
+
+}
+.content div{
+width: 100%; 
+margin-top: 30px;
+margin-right: 30px;
+}
+
+.content div img{
+width: 100%;
+}     
+}
+ 
